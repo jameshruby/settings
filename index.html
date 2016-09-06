@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project settings</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    
+         <template id="properties-template">    
+            <tr>
+                <td><input class="property_name" "text" value=""></td>
+                <td><input class="property_value" "text" value=""></td>
+            </tr>
+        </template>
+
+    <template id="box-template">
+        <div class="box">
+            <div class="box-title" data-name="<name>">
+                <input class="comment-body" type="text" value="<name>">
+                <div class="checkbox">
+                    <input type="checkbox">
+                </div>
+            </div>
+            <div class="box-content">
+                <table class="table-content">
+               
+               </table>
+                <button class="add-row">+</button>
+            </div>    
+        </div> 
+    </template>
+           
+                
+    </head>
+    <body>
+        <div class="boxes-loading"></div> 
+        <header>
+            <div class="container-fluid">
+                <div class="nav nav-left">
+                    <span class="icon" id="add-box"><img src="img/icon_plus.png" alt></span>
+                    <span class="icon icon-center" id="delete-box"><img src="img/icon_minus.png" alt></span>
+                </div>
+                <div class="nav nav-right">
+                    <span class="icon"><img src="img/icon_info.png" alt></span>
+                    <span class="icon"><img src="img/icon_wheel.png" alt></span>
+                    <span class="icon"><img src="img/icon_question.png" alt></span>
+                    <div class="search">
+                        <span class="icon no-wheel"><img src="img/icon_search.png" alt></span>
+                        <input type="text" id="search">
+                    </div>
+                </div>
+            </div>
+        </header>
+      
+            <section class="boxes">
+                <div class="boxes-container container-fluid" id="contentq" >
+                     
+                </div>
+            </section>
+         
+    
+
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/websockets.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

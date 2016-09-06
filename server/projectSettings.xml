@@ -1,0 +1,3645 @@
+<?xml version="1.0"?>
+<project name="projectSettings" basedir=".">
+	<target name="3DEN">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\3DEN"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+
+		<property name="addon.includes">
+			*.hpp
+			*\**\*.hpp
+			*\**\*.wss
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="3DEN_Language">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\3DEN_Language"/>
+
+		<property name="lockit.package" value="3DEN_Language" /> <!--UI, Tutorial, Functions, Cfg3DEN -->
+
+	   	<property name="lockit.project" value="3DEN" />
+	   	<property name="lockit.database" value="3DEN" />
+
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="Air_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Air_F"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Air_F_Beta">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Air_F_Beta"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Air_F_Delta">
+		<property name="addon.dlc" value="Delta"/>
+		<property name="addon.dir" value="A3\Air_F_Delta"/>
+		<property name="artifact.storage.dir" value="Delta\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Air_F_EPB">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Air_F_EPB"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Air_F_EPC">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Air_F_EPC"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Air_F_Exp">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Air_F_Exp"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Air_F_Gamma">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Air_F_Gamma"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Air_F_Heli">
+		<property name="addon.dlc" value="Heli"/>
+		<property name="addon.dir" value="A3\Air_F_Heli"/>
+		<property name="artifact.storage.dir" value="Heli\Addons\"/>
+		<property name="addon.appid" value="304380"/>
+  <antcall target="main"/>
+    </target>
+
+	<target name="Air_F_RTD">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Air_F_RTD"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Animals_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Animals_F"/>
+		<property name="addon.excludes">
+				**\*.xml
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Animals_F_Beta">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Animals_F_Beta"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Anims_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\anims_f"/>
+		<property name="addon.excludes">
+			data\
+		</property>
+		<property name="build.anims.retarget" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Anims_F_Bootcamp">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Anims_F_Bootcamp"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Anims_F_data">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\anims_f\data"/>
+		<property name="build.anims.retarget" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+    <target name="Anims_F_Delta">
+    	<property name="addon.dlc" value="Delta"/>
+		<property name="addon.dir" value="A3\Anims_F_Delta"/>
+		<property name="artifact.storage.dir" value="Delta\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+
+	<target name="Anims_F_EPA">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Anims_F_EPA"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Anims_F_EPC">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Anims_F_EPC"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Anims_F_Exp">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Anims_F_Exp"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+		<property name="build.anims.retarget" value="true"/>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Anims_F_Exp_A">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Anims_F_Exp_A"/>
+
+	    <antcall target="main"/>
+    </target>
+
+    <target name="Anims_F_Exp_B">
+    	<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Anims_F_Exp_B"/>
+		<antcall target="main"/>
+    </target>
+
+	<target name="Anims_F_Heli">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Anims_F_Heli"/>
+		<property name="artifact.storage.dir" value="Heli\Addons\"/>
+		<property name="addon.appid" value="304380"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Anims_F_Kart">
+		<property name="addon.dlc" value="Kart"/>
+		<property name="addon.dir" value="A3\Anims_F_Kart"/>
+		<property name="artifact.storage.dir" value="Kart\Addons\"/>
+		<property name="addon.appid" value="288520"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Anims_F_Mark">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\Anims_F_Mark"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="addon.appid" value="332350"/>
+	    <antcall target="main"/>
+    </target>
+
+    <target name="Anims_F_Mod">
+    	<property name="addon.dlc" value="OfficialMod"/>
+		<property name="addon.dir" value="A3\Anims_F_Mod"/>
+		<property name="artifact.storage.dir" value="OfficialMod\Addons\"/>
+		<antcall target="main"/>
+    </target>
+
+	<target name="Armor_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Armor_F"/>
+		<property name="addon.excludes">
+			**\*.xml
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Armor_F_Argo">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Armor_F_Argo"/>
+		<property name="artifact.storage.dir" value="Argo\Addons\"/>
+	
+		<antcall target="main"/>
+    </target>
+
+
+	<target name="Armor_F_Exp">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Armor_F_Exp"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+
+		<antcall target="main"/>
+    </target>
+
+	<target name="Armor_F_Beta">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Armor_F_Beta"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Armor_F_Delta">
+		<property name="addon.dlc" value="Delta"/>
+		<property name="addon.dir" value="A3\Armor_F_Delta"/>
+		<property name="artifact.storage.dir" value="Delta\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Armor_F_EPB">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Armor_F_EPB"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Armor_F_EPC">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Armor_F_EPC"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Armor_F_Gamma">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Armor_F_Gamma"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Autotests_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Autotests_F"/>
+
+		<property name="addon.includes">
+		   **\*.cfg
+	       **\*.hpp
+		</property>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="baseconfig_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\BaseConfig_F"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Beny_F">
+		<property name="addon.dlc" value="Internal"/>
+		<property name="addon.dir" value="A3\Beny_F"/>
+		<property name="artifact.storage.dir" value="Beny_F\Addons\"/>
+		<property name="addon.includes">
+		  *.p3d
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+    <target name="Bxbx_F">
+    	<property name="addon.dlc" value="Internal"/>
+		<property name="addon.dir" value="A3\Bxbx_F"/>
+		<property name="artifact.storage.dir" value="Bxbx\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+
+	<target name="boat_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Boat_F"/>
+	    <antcall target="main"/>
+    </target>
+
+    <target name="Boat_F_Delta">
+    	<property name="addon.dlc" value="Delta"/>
+		<property name="addon.dir" value="A3\Boat_F_Delta"/>
+		<property name="artifact.storage.dir" value="Delta\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="boat_F_beta">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Boat_F_Beta"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Boat_F_EPC">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Boat_F_EPC"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Boat_F_Exp">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Boat_F_Exp"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="boat_F_gamma">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Boat_F_Gamma"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Boat_F_Heli">
+		<property name="addon.dlc" value="Heli"/>
+		<property name="addon.dir" value="A3\Boat_F_Heli"/>
+		<property name="artifact.storage.dir" value="Heli\Addons\"/>
+		<property name="addon.appid" value="304380"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Burkhar_F">
+		<property name="addon.dlc" value="Internal"/>
+		<property name="addon.dir" value="A3\Burkhar_F"/>
+		<property name="artifact.storage.dir" value="Burkhar\addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Cargoposes_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Cargoposes_F"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Cargoposes_F_Exp">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Cargoposes_F_Exp"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Cargoposes_F_Heli">
+		<property name="addon.dlc" value="Heli"/>
+		<property name="addon.dir" value="A3\Cargoposes_F_Heli"/>
+		<property name="artifact.storage.dir" value="Heli\Addons\"/>
+		<property name="addon.appid" value="304380"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Characters_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Characters_F"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Characters_F_Beta">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Characters_F_Beta"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Characters_F_Bootcamp">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Characters_F_Bootcamp"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Characters_F_Delta">
+		<property name="addon.dlc" value="Delta"/>
+		<property name="addon.dir" value="A3\Characters_F_Delta"/>
+		<property name="artifact.storage.dir" value="Delta\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Characters_F_EPA">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Characters_F_EPA"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Characters_F_EPB">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Characters_F_EPB"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Characters_F_EPC">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Characters_F_EPC"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Characters_F_Exp">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Characters_F_Exp"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Characters_F_Gamma">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Characters_F_Gamma"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Characters_F_Kart">
+		<property name="addon.dlc" value="Kart"/>
+		<property name="addon.dir" value="A3\Characters_F_Kart"/>
+		<property name="artifact.storage.dir" value="Kart\Addons\"/>
+		<property name="addon.appid" value="288520"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Characters_F_Mark">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\Characters_F_Mark"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="addon.appid" value="332350"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Core_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Core"/>
+		<property name="pbo.prefix" value="core"/>
+		<property name="artifact.storage.dir" value="Dta\"/>
+		<property name="addon.includes">
+			**\*.paa
+			All\todo.png
+			data\ticonversion.tga
+			data\ticonversion.png
+			data\Fonts\*.*
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+    <target name="Curator_F">
+    	<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Curator_F"/>
+		<property name="artifact.storage.dir" value="Curator\Addons\"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="data_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Data_f"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Data_F_Argo">
+		<property name="addon.dlc" value="Argo"/>
+		<property name="addon.dir" value="A3\Data_F_Argo"/>
+		<property name="artifact.storage.dir" value="Argo\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+
+	<target name="Data_F_Bootcamp">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Data_F_Bootcamp"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Data_F_Curator">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Data_F_Curator"/>
+		<property name="artifact.storage.dir" value="Curator\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Data_F_Delta">
+		<property name="addon.dlc" value="Delta"/>
+		<property name="addon.dir" value="A3\Data_F_Delta"/>
+		<property name="artifact.storage.dir" value="Delta\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Data_F_Exp">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Data_F_Exp"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Data_F_Exp_A">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Data_F_Exp_A"/>
+	    <antcall target="main"/>
+    </target>
+
+    <target name="Data_F_Exp_B">
+    	<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Data_F_Exp_B"/>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Data_F_Heli">
+		<property name="addon.dlc" value="Heli"/>
+		<property name="addon.dir" value="A3\Data_F_Heli"/>
+		<property name="artifact.storage.dir" value="Heli\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Data_F_Kart">
+		<property name="addon.dlc" value="Kart"/>
+		<property name="addon.dir" value="A3\Data_F_Kart"/>
+		<property name="artifact.storage.dir" value="Kart\Addons\"/>
+		<property name="addon.appid" value="288520"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Data_F_Mark">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\Data_F_Mark"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="addon.appid" value="332350"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Data_F_Mod">
+		<property name="addon.dlc" value="OfficialMod"/>
+		<property name="addon.dir" value="A3\Data_F_Mod"/>
+		<property name="artifact.storage.dir" value="OfficialMod\Addons\"/>
+		<antcall target="main"/>
+    </target>
+
+	<target name="Data_F_Orange">
+		<property name="addon.dlc" value="Orange"/>
+		<property name="addon.dir" value="A3\Data_F_Orange"/>
+		<property name="artifact.storage.dir" value="Orange\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+	<target name="drones_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Drones_F"/>
+		<antcall target="main"/>
+	</target>
+
+	<target name="Druid_F">
+		<property name="addon.dlc" value="Internal"/>
+		<property name="addon.dir" value="A3\Druid_F"/>
+		<property name="artifact.storage.dir" value="Druid\Addons\"/>
+		<antcall target="main"/>
+	</target>
+
+	<target name="Dta">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Dta"/>
+		<property name="addon.revision" value="HEAD"/>
+		<property name="artifact.storage.dir" value="Dta\"/>
+		<antcall target="builddta"/>
+    </target>
+
+	<target name="dubbing_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Dubbing_F"/>
+		<property name="DUBBING" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="dubbing_F_beta">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Dubbing_F_Beta"/>
+		<property name="DUBBING" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Dubbing_F_Bootcamp">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Dubbing_F_Bootcamp"/>
+		<property name="DUBBING" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="dubbing_F_delta">
+		<property name="addon.dlc" value="Delta"/>
+		<property name="addon.dir" value="A3\Dubbing_F_delta"/>
+		<property name="artifact.storage.dir" value="Delta\Addons\"/>
+		<property name="DUBBING" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Dubbing_F_EPA">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Dubbing_F_EPA"/>
+		<property name="DUBBING" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Dubbing_F_EPB">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Dubbing_F_EPB"/>
+		<property name="DUBBING" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Dubbing_F_EPC">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Dubbing_F_EPC"/>
+		<property name="DUBBING" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Dubbing_F_Exp">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Dubbing_F_Exp"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+		<property name="DUBBING" value="true"/>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Dubbing_F_Exp_A">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Dubbing_F_Exp_A"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Dubbing_F_Exp_B">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Dubbing_F_Exp_B"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.dlc.ebo" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Dubbing_F_Exp_MP">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Dubbing_F_Exp_MP"/>
+		<property name="artifact.storage.dir" value="Exp_MP\Addons\"/>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="dubbing_F_gamma">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Dubbing_F_Gamma"/>
+		<property name="DUBBING" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Dubbing_F_Heli">
+		<property name="addon.dlc" value="Heli"/>
+		<property name="addon.dir" value="A3\Dubbing_F_Heli"/>
+		<property name="artifact.storage.dir" value="Heli\Addons\"/>
+		<property name="addon.appid" value="304380"/>
+		<property name="DUBBING" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Dubbing_F_Mark">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\Dubbing_F_Mark"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="addon.appid" value="332350"/>
+		<property name="DUBBING" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Dubbing_F_MP_Mark">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\Dubbing_F_MP_Mark"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="addon.appid" value="332350"/>
+		<property name="DUBBING" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="dubbing_radio_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Dubbing_Radio_F"/>
+		<property name="DUBBING" value="true" />
+
+		<property name="addon.excludes">
+			Data\
+			; FSM files are included by config, so they shouldn't be packed into as they are.
+			*.fsm
+			obsolete\
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+   <target name="Dubbing_Radio_F_Data_ENG">
+   	<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Dubbing_Radio_F\Data\ENG"/>
+		<property name="DUBBING" value="true" />
+
+	    <antcall target="build-dubbing"/>
+  </target>
+
+  <target name="Dubbing_Radio_F_Data_ENGB">
+  	<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Dubbing_Radio_F\Data\ENGB"/>
+		<property name="DUBBING" value="true" />
+
+	    <antcall target="build-dubbing"/>
+  </target>
+
+  <target name="Dubbing_Radio_F_Data_GRE">
+  		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Dubbing_Radio_F\Data\GRE"/>
+		<property name="DUBBING" value="true" />
+
+	    <antcall target="build-dubbing"/>
+  </target>
+
+     <target name="Dubbing_Radio_F_Data_PER">
+     	<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Dubbing_Radio_F\Data\PER"/>
+		<property name="DUBBING" value="true" />
+
+	    <antcall target="build-dubbing"/>
+	  </target
+>
+	  <target name="Dubbing_Radio_F_Data_VR">
+	  	<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Dubbing_Radio_F\Data\VR"/>
+		<property name="DUBBING" value="true" />
+
+		<antcall target="build-dubbing"/>
+	  </target>
+
+
+	   <target name="Dubbing_Radio_F_EXP">
+	   	<property name="addon.dlc" value="Expansion"/>
+			<property name="addon.dir" value="A3\Dubbing_Radio_F_EXP"/>
+			<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+			<property name="addon.appid" value="395180"/>
+			<property name="addon.dlc.ebo" value="true"/>
+			<property name="DUBBING" value="true" />
+
+			<property name="addon.excludes">
+				Data\
+			</property>
+		    <antcall target="main"/>
+		</target>
+
+
+	  <target name="Dubbing_Radio_F_EXP_Data_FRE">
+	  	<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Dubbing_Radio_F_EXP\Data\FRE"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.dlc.ebo" value="true"/>
+		<property name="addon.appid" value="395180"/>
+
+		<property name="DUBBING" value="true" />
+
+		<property name="addon.excludes">
+			CHI\
+		</property>
+	    <antcall target="main"/>
+	  </target>
+
+	  <target name="Dubbing_Radio_F_Exp_Data_CHI">
+	  	<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Dubbing_Radio_F_EXP\Data\CHI"/>
+			<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+			<property name="addon.dlc.ebo" value="true"/>
+			<property name="addon.appid" value="395180"/>
+
+		<property name="DUBBING" value="true" />
+		<property name="addon.excludes">
+			FRE\
+		</property>
+	    <antcall target="main"/>
+	  </target>
+
+
+	  <target name="Dubbing_Radio_F_Exp_Data_ENGFRE">
+	  	<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Dubbing_Radio_F_EXP\Data\ENGFRE"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+
+		<property name="DUBBING" value="true" />
+	    <antcall target="main"/>
+	  </target>
+
+	  <target name="dubbing_radio_F_global">
+		<property name="addon.dir" value="A3\Dubbing_Radio_F\Global"/>
+		<property name="DUBBING" value="true" />
+
+		<property name="addon.excludes">
+			Data\
+			; FSM files are included by config, so they shouldn't be packed into as they are.
+			*.fsm
+		</property>
+	    <antcall target="main"/>
+
+    </target>
+    <target name="dubbing_radio_F_data">
+    	<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Dubbing_Radio_F\Data" />
+		<property name="DUBBING" value="true" />
+
+	    <antcall target="build-dubbing"/>
+    </target>
+
+	<target name="Dubbing_Radio_F_Data_Static">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Dubbing_Radio_F\Data\static" />
+		<property name="DUBBING" value="true" />
+		<!-- <import file="dubbing_radio_f_data.xml" /> -->
+	    <antcall target="main"/>
+    </target>
+
+	<target name="EditorPreviews_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\EditorPreviews_F"/>
+		<property name="addon.includes" value="**\*.jpg"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+
+	    <antcall target="main"/>
+    </target>
+
+
+	<target name="EditorPreviews_F_Exp">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\EditorPreviews_F_Exp"/>
+		<property name="addon.includes" value="**\*.jpg"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+
+		<antcall target="main"/>
+    </target>
+
+
+	<target name="Editor_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Editor_F"/>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Enoch_Plants" description="obsolete">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Enoch_Plants"/>
+		<property name="artifact.storage.dir" value="Enoch\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Enoch_Rocks"  description="obsolete">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Enoch_Rocks"/>
+		<property name="artifact.storage.dir" value="Enoch\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="External_F" description="obsolete">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\External_F"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="External_F_Map_Exterland" description="obsolete">
+		<property name="addon.dir" value="A3\External_F\Map_Exterland"/>
+		<property name="addon.dlc" value="Addons"/>
+	    <antcall target="main"/>
+	</target>
+
+	<target name="External_F_Plants_Ext" description="obsolete">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\External_F\Plants_Ext"/>
+	    <antcall target="main"/>
+	</target>
+
+	<target name="External_F_Structures_Ext" description="obsolete">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\External_F\Structures_Ext"/>
+	    <antcall target="main"/>
+	</target>
+
+	<target name="functions_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Functions_F"/>
+		<property name="addon.includes">
+			Diagnostic\fn_diagMissionPositions_delete.cfg
+			*\**\*.hpp
+			cfgpostprocesstemplates.hpp
+			cfgremoteexeccommands.hpp
+			cfgpostprocesstemplates.hpp
+			cfgremoteexeccommands.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Functions_F_Bootcamp">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Functions_F_Bootcamp"/>
+
+		<property name="addon.includes">
+			*.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Functions_F_Curator">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Functions_F_Curator"/>
+		<property name="artifact.storage.dir" value="Curator\Addons\"/>
+
+		<property name="addon.includes">
+			*.hpp
+			curator\*.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Functions_F_EPA">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Functions_F_EPA"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Functions_F_EPC">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Functions_F_EPC"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Functions_F_Exp">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Functions_F_Exp"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+
+		<property name="addon.includes">
+			*.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Functions_F_Exp_A">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Functions_F_Exp_A"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Functions_F_Exp_B">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Functions_F_Exp_B"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+
+		<property name="addon.dlc.ebo" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Functions_F_Exp_MP">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Functions_F_Exp_MP"/>
+		<property name="artifact.storage.dir" value="Exp_MP\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Functions_F_Heli">
+		<property name="addon.dlc" value="Heli"/>
+		<property name="addon.dir" value="A3\Functions_F_Heli"/>
+		<property name="artifact.storage.dir" value="Heli\Addons\"/>
+		<property name="addon.appid" value="304380"/>
+		<property name="addon.includes">
+			*.hpp
+			*\*.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Functions_F_Mark">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\Functions_F_Mark"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="addon.appid" value="332350"/>
+
+		<property name="addon.includes">
+			*\*.hpp
+			*.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Functions_F_MP_Mark">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\Functions_F_MP_Mark"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="addon.appid" value="332350"/>
+
+		<property name="addon.includes">
+			*\*.hpp
+			*.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Functions_F_Orange">
+		<property name="addon.dlc" value="Orange"/>
+		<property name="addon.dir" value="A3\Functions_F_Orange"/>
+		<property name="artifact.storage.dir" value="Orange\Addons\"/>
+		<property name="addon.includes">
+			*\**\*.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="GS_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\GS_F"/>
+		<property name="artifact.storage.dir" value="gs\addons\"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+
+		<property name="addon.includes">
+			*\**\*.hpp
+			**\*.ods
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Internal_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Internal_F"/>
+		<property name="artifact.storage.dir" value="Internal\Addons"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.ebo" value="true"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+		<antcall target="main"/>
+    </target>
+
+	<target name="Klamacz_F">
+		<property name="addon.dlc" value="Internal"/>
+		<property name="addon.dir" value="A3\Klamacz_F"/>
+		<property name="artifact.storage.dir" value="Klamacz\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+    <target name="Jezuro_F">
+    	<property name="addon.dlc" value="Internal"/>
+		<property name="addon.dir" value="A3\Jezuro_F"/>
+		<property name="artifact.storage.dir" value="Jezuro\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+   <target name="languageCore_f">
+   	<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Languagecore_f"/>
+		<property name="artifact.storage.dir" value="Dta\"/>
+		<property name="lockit.project" value="Core" />
+
+		<property name="lockit.package" value="" />
+		<property name="pbo.prefix" value="languagecore_f"/>
+		<antcall target="build-languages"/>
+    </target>
+
+	<target name="languageMissions_f">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\LanguageMissions_f"/>
+		<property name="lockit.package" value="Languagemissions_Alpha" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="languageMissions_F_Beta">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\LanguageMissions_F_Beta"/>
+		<property name="lockit.package" value="Languagemissions_Beta" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="LanguageMissions_F_Bootcamp">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\LanguageMissions_F_Bootcamp"/>
+		<property name="lockit.package" value="Languagemissions_Bootcamp" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="languageMissions_F_Delta">
+		<property name="addon.dlc" value="Delta"/>
+		<property name="addon.dir" value="A3\LanguageMissions_F_Delta"/>
+		<property name="artifact.storage.dir" value="Delta\Addons\"/>
+		<property name="lockit.package" value="Languagemissions_Delta" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="languageMissions_F_EPA">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\LanguageMissions_F_EPA"/>
+		<property name="lockit.package" value="Languagemissions_EPA" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="languageMissions_F_EPB">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\LanguageMissions_F_EPB"/>
+		<property name="lockit.package" value="Languagemissions_EPB" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="languageMissions_F_EPC">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\LanguageMissions_F_EPC"/>
+		<property name="lockit.package" value="Languagemissions_EPC" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="LanguageMissions_F_Exp">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\LanguageMissions_F_Exp"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+		<property name="lockit.package" value="Languagemissions_Exp" />
+
+
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="LanguageMissions_F_Exp_A">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\LanguageMissions_F_Exp_A"/>
+
+		<property name="lockit.package" value="Languagemissions_Exp_A" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="LanguageMissions_F_Exp_B">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\LanguageMissions_F_Exp_B"/>
+		<property name="lockit.package" value="Languagemissions_Exp_B" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="LanguageMissions_F_Exp_MP">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\LanguageMissions_F_Exp_MP"/>
+		<property name="artifact.storage.dir" value="Exp_MP\Addons\"/>
+
+		<property name="lockit.package" value="Languagemissions_Exp" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="languageMissions_F_Gamma">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\LanguageMissions_F_Gamma"/>
+		<property name="lockit.package" value="Languagemissions_Gamma" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="LanguageMissions_F_Heli">
+		<property name="addon.dlc" value="Heli"/>
+		<property name="addon.dir" value="A3\LanguageMissions_F_Heli"/>
+		<property name="artifact.storage.dir" value="Heli\Addons\"/>
+		<property name="addon.appid" value="304380"/>
+		<property name="lockit.package" value="Languagemissions_Heli" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="languageMissions_F_Kart">
+		<property name="addon.dlc" value="Kart"/>
+		<property name="addon.dir" value="A3\LanguageMissions_F_Kart"/>
+		<property name="artifact.storage.dir" value="Kart\Addons\"/>
+		<property name="addon.appid" value="288520"/>
+		<property name="lockit.package" value="Languagemissions_Kart" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="LanguageMissions_F_Mark">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\LanguageMissions_F_Mark"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="addon.appid" value="332350"/>
+		<property name="lockit.package" value="Languagemissions_Mark" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="LanguageMissions_F_MP_Mark">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\LanguageMissions_F_MP_Mark"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="addon.appid" value="332350"/>
+		<property name="lockit.package" value="Languagemissions_MP_Mark" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="language_f">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Language_f"/>
+		<property name="lockit.package" value="Language_Alpha" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="Language_F_Argo">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Language_F_Argo"/>
+		<property name="lockit.package" value="Language_F_Argo" />
+		<property name="artifact.storage.dir" value="Argo\Addons\"/>
+	    <antcall target="build-languages"/>
+    </target>
+
+
+	<target name="language_F_Beta">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Language_F_Beta"/>
+		<property name="lockit.package" value="Language_Beta" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="Language_F_Bootcamp">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Language_F_Bootcamp"/>
+		<property name="lockit.package" value="Language_Bootcamp" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="Language_F_Curator">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Language_F_Curator"/>
+		<property name="artifact.storage.dir" value="Curator\Addons\"/>
+		<property name="lockit.package" value="Language_Curator" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="language_F_Delta">
+		<property name="addon.dlc" value="Delta"/>
+		<property name="addon.dir" value="A3\Language_F_Delta"/>
+		<property name="artifact.storage.dir" value="Delta\Addons\"/>
+		<property name="lockit.package" value="Language_Delta" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="Language_F_EPA">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Language_F_EPA"/>
+		<property name="lockit.package" value="Language_EPA" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="Language_F_EPB">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Language_F_EPB"/>
+		<property name="lockit.package" value="Language_EPB" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="Language_F_EPC">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Language_F_EPC"/>
+		<property name="lockit.package" value="Language_EPC" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="language_f_exp">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Language_F_Exp"/>
+		<property name="artifact.storage.dir" value="Expansion\addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+
+
+		<property name="lockit.package" value="Language_Exp" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="Language_F_Exp_A">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Language_F_Exp_A"/>
+		<property name="lockit.package" value="Language_Exp_A" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="Language_F_Exp_B">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Language_F_Exp_B"/>
+		<property name="lockit.package" value="Language_Exp_B" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="Language_F_Exp_MP">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Language_F_Exp_MP"/>
+		<property name="artifact.storage.dir" value="Exp_MP\Addons\"/>
+
+		<property name="lockit.package" value="Language_Exp_Mp" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="language_F_Gamma">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Language_F_Gamma"/>
+		<property name="lockit.package" value="Language_Gamma" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="Language_F_Heli">
+		<property name="addon.dlc" value="Heli"/>
+		<property name="addon.dir" value="A3\Language_F_Heli"/>
+		<property name="artifact.storage.dir" value="Heli\Addons\"/>
+		<property name="addon.appid" value="304380"/>
+		<property name="lockit.package" value="Language_Heli" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="Language_F_Kart">
+		<property name="addon.dlc" value="Kart"/>
+		<property name="addon.dir" value="A3\Language_F_Kart"/>
+		<property name="artifact.storage.dir" value="Kart\Addons\"/>
+		<property name="addon.appid" value="288520"/>
+		<property name="lockit.package" value="Language_Kart" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="Language_F_Mark">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\Language_F_Mark"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="addon.appid" value="332350"/>
+		<property name="lockit.package" value="Language_Mark" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="Language_F_MP_Mark">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\Language_F_MP_Mark"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="addon.appid" value="332350"/>
+		<property name="lockit.package" value="Language_MP_Mark" />
+	    <antcall target="build-languages"/>
+    </target>
+
+	<target name="Language_F_Mod">
+		<property name="addon.dlc" value="OfficialMod"/>
+		<property name="addon.dir" value="A3\Language_F_Mod"/>
+		<property name="artifact.storage.dir" value="OfficialMod\Addons\"/>
+		<property name="lockit.package" value="Language_Mod" />
+		<antcall target="build-languages"/>
+    </target>
+
+	<target name="Locky_F">
+		<property name="addon.dlc" value="Internal"/>
+		<property name="addon.dir" value="A3\Locky_F"/>
+		<property name="artifact.storage.dir" value="Locky\Addons\"/>
+		<property name="addon.excludes">
+			timelapse.sqf
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Map_Abel_Scenes_F">
+		<property name="addon.dlc" value="Argo"/>
+		<property name="addon.dir" value="A3\Map_Abel_Scenes_F"/>
+	     <property name="artifact.storage.dir" value="Argo\Addons\"/>
+        <antcall target="main"/>
+    </target>
+
+	<target name="map_Altis">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Map_Altis"/>
+		<property name="addon.binarize.always" value="true"/>
+		<property name="addon.excludes">
+			data\
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="map_Altis_data">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Map_Altis\data"/>
+		<property name="addon.excludes">
+			\layers\
+			layers*\
+			*.seq
+		</property>
+		<property name="addon.includes">
+			roads\*.*
+			all\*.seq
+
+			*.shp
+			*.dbf
+			*.prj
+			*.shx
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="map_Altis_data_layers">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Map_Altis\data\layers"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+		<property name="layers.src" value="x:\dataca\a3\Map_Altis\data\layers"/>
+		<property name="layers.dst" value="P:\A3\Map_Altis\data\layers"/>
+		<property name="layers.tile.size" value="32"/>
+
+		<property name="texheaders.exclude" value="${src.path}\fb_exclude.lst"/>
+	     <antcall target="build-maps"/>
+    </target>
+
+	<target name="map_Altis_Scenes_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Map_Altis_Scenes_F"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Map_Data">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Map_Data"/>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Map_Data_Exp">
+		<property name="addon.dlc" value="ExpansionPremium"/>
+		<property name="addon.dir" value="A3\Map_Data_Exp"/>
+		<property name="artifact.storage.dir" value="ExpansionPremium\Addons\"/>
+	    <property name="addon.appid" value="395180"/>
+	    <property name="addon.dlc.ebo" value="true"/>
+ 		<antcall target="main"/>		
+    </target>
+
+	<target name="Map_Enoch" description="obsolete">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Map_Enoch"/>
+		<property name="artifact.storage.dir" value="Enoch\Addons\"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="map_medsea">
+		<property name="addon.dlc" value="Jets"/>
+		<property name="addon.dir" value="A3\map_medsea"/>
+		<property name="addon.binarize.always" value="true"/>
+		<property name="artifact.storage.dir" value="Jets\Addons\"/>
+		<property name="addon.excludes">
+			data\
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="map_medsea_data">
+		<property name="addon.dlc" value="Jets"/>
+		<property name="addon.dir" value="A3\map_medsea\data"/>
+		<property name="artifact.storage.dir" value="Jets\Addons\"/>
+		<property name="addon.excludes">
+			\layers\
+			layers*\
+			*.seq
+		</property>
+		<property name="addon.includes">
+			roads\*.*
+			all\*.seq
+
+			*.shp
+			*.dbf
+			*.prj
+			*.shx
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+    <target name="map_medsea_data_layers">
+		<property name="addon.dlc" value="Jets"/>
+		<property name="addon.dir" value="A3\map_medsea\data\layers"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+		<property name="layers.src" value="x:\dataca\a3\map_medsea\data\layers"/>
+		<property name="layers.dst" value="P:\A3\map_medsea\data\layers"/>
+		<property name="layers.tile.size" value="0"/>
+		<property name="artifact.storage.dir" value="Jets\Addons\"/>
+
+		 <property name="texheaders.exclude" value="${src.path}\fb_exclude.lst"/>
+	     <antcall target="build-maps"/>
+    </target>
+
+	<target name="Map_Sanda" description="obsolete">
+		<property name="addon.dlc" value="Design"/>
+		<property name="addon.dir" value="A3\Map_Sanda"/>
+		<property name="artifact.storage.dir" value="Design\Addons\"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+
+		<property name="addon.includes">
+			data\roads\*.*
+			data\*.seq
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Map_Stratis">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Map_Stratis"/>
+		<property name="addon.binarize.always" value="true"/>
+
+		<property name="addon.excludes">
+			data\
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Map_Stratis_data">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Map_Stratis\data"/>
+		<property name="addon.excludes">
+			layers*\
+			*.seq
+		</property>
+		<property name="addon.includes">
+			roads\*.*
+
+			s*.shp
+			*.dbf
+			*.prj
+			*.shx
+		</property>
+        <antcall target="main"/>
+    </target>
+
+	<target name="Map_Stratis_data_layers">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Map_Stratis\data\layers"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+		<property name="layers.src" value="x:\dataca\a3\Map_Stratis\data\layers"/>
+		<property name="layers.dst" value="P:\A3\Map_Stratis\data\layers"/>
+		<property name="layers.tile.size" value="0"/>
+
+		<property name="texheaders.exclude" value="${src.path}\fb_exclude.lst"/>
+	    <antcall target="build-maps"/>
+    </target>
+
+	<target name="Map_Stratis_Scenes_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Map_Stratis_Scenes_F"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="map_tanoabuka">
+		<property name="addon.dlc" value="ExpansionPremium"/>
+		<property name="addon.dir" value="A3\Map_Tanoabuka"/>
+		<property name="addon.binarize.always" value="true"/>
+		<property name="artifact.storage.dir" value="ExpansionPremium\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+		<property name="addon.excludes">
+			Data\
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="map_tanoa_scenes_f">
+		<property name="addon.dlc" value="ExpansionPremium"/>
+		<property name="addon.dir" value="A3\Map_Tanoa_Scenes_F"/>
+		<property name="artifact.storage.dir" value="ExpansionPremium\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Map_Tanoabuka_Data">
+		<property name="addon.dlc" value="ExpansionPremium"/>
+		<property name="addon.dir" value="A3\Map_Tanoabuka\Data"/>
+		<property name="artifact.storage.dir" value="ExpansionPremium\Addons\"/>
+			<property name="PACK_ALL_TEXTURES" value="true"/>
+			<property name="addon.appid" value="395180"/>
+			<property name="addon.dlc.ebo" value="true"/>
+			<property name="addon.excludes">
+			\layers\
+			layers*\
+			*.seq
+		</property>
+		<property name="addon.includes">
+			roads\*.*
+			all\*.seq
+
+			*.shp
+			*.dbf
+			*.prj
+			*.shx
+			</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Map_Tanoabuka_Data_Layers">
+		<property name="addon.dlc" value="ExpansionPremium"/>
+		<property name="addon.dir" value="A3\Map_Tanoabuka\Data\Layers"/>
+		<property name="artifact.storage.dir" value="ExpansionPremium\Addons\"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+		<property name="layers.dst" value="P:\A3\Map_Tanoabuka\Data\Layers"/>
+		<property name="layers.src" value="x:\dataca\a3\Map_Tanoabuka\Data\Layers"/>
+		<property name="layers.tile.size" value="32"/>
+	    <property name="WIPE_TEMP" value="true"/>
+    	<property name="texheaders.exclude" value="${src.path}\fb_exclude.lst"/>
+    	<property name="addon.appid" value="395180"/>
+    	<property name="addon.dlc.ebo" value="true"/>
+
+	    <antcall target="build-maps"/>
+    </target>
+
+	<target name="Map_VR">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Map_VR"/>
+		<property name="addon.excludes">
+			**\*.png
+			*.tga
+			**\*.tga
+			**\*.TGA
+			textures.lst
+		</property>
+		<property name="addon.includes">
+			data\roads\*.*
+			data\*.seq
+		</property>
+		<property name="addon.binarize.always" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Map_VR_Scenes_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Map_VR_Scenes_F"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Misc_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Misc_F"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_design_f">
+		<property name="addon.dlc" value="Design"/>
+		<property name="addon.dir" value="A3\Missions_design_f"/>
+		<property name="artifact.storage.dir" value="Design\Addons\"/>
+		<property name="addon.includes">
+			**\*.cfg
+			**\*.hpp
+			**\*.paa
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F"/>
+		<property name="addon.excludes">
+			data\
+			kb\*.hpp
+			music\
+			video\
+			cfgFiringDrills.hpp
+			cfgFunctions.hpp
+			cfgIdentities.hpp
+			cfgMissions.hpp
+			cfgPatches.hpp
+			cfgSounds.hpp
+			cfgVehicles.hpp
+			design.html
+			spotlight.hpp
+		</property>
+		<property name="addon.includes">
+			showcases\**\*.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Beta">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F_Beta"/>
+		<property name="addon.excludes">
+			data\
+			video\
+		</property>
+		<property name="addon.includes">
+			MPScenarios\**\*.hpp
+			Showcases\**\*.hpp
+			Challenges\description.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Beta_data">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F_Beta\data"/>
+		<property name="PACK_ALL_TEXTURES" value="true" />
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Beta_video">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F_Beta\video"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Bootcamp">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F_Bootcamp"/>
+		<property name="addon.excludes">
+			data\
+			video\
+			kb\*.hpp
+			cfgfunctions.hpp
+			cfgmissions.hpp
+			cfgpatches.hpp
+		</property>
+		<property name="addon.includes">
+			*.hpp
+			**\*.hpp
+			*\**\*.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Bootcamp_data">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F_Bootcamp\data"/>
+		<property name="PACK_ALL_TEXTURES" value="true" />
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Bootcamp_video">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F_Bootcamp\video"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Curator">
+		<property name="addon.dlc" value="Curator"/>
+		<property name="addon.dir" value="A3\Missions_F_Curator"/>
+		<property name="artifact.storage.dir" value="Curator\Addons\"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+		<property name="addon.includes">
+			*.hpp
+			*\**\*.hpp
+			**\*.ods
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_data">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F\data"/>
+		<property name="PACK_ALL_TEXTURES" value="true" />
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Delta">
+		<property name="addon.dlc" value="Delta"/>
+		<property name="addon.dir" value="A3\Missions_F_Delta"/>
+		<property name="artifact.storage.dir" value="Delta\Addons\"/>
+		<property name="addon.includes">
+			*.hpp
+			MPScenarios\**\*.hpp
+			Challenges\description.hpp
+		</property>
+		<property name="addon.excludes">
+			data\
+			kb\*.hpp
+			video\
+			cfgFunctions.hpp
+			cfgMissions.hpp
+			cfgPatches.hpp
+			cfgVehicles.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Delta_data">
+		<property name="addon.dlc" value="Delta"/>
+		<property name="addon.dir" value="A3\Missions_F_Delta\data"/>
+		<property name="PACK_ALL_TEXTURES" value="true" />
+		<property name="artifact.storage.dir" value="Delta\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+    <target name="Missions_F_Delta_video">
+    	<property name="addon.dlc" value="Delta"/>
+		<property name="addon.dir" value="A3\Missions_F_Delta\video"/>
+
+		<property name="artifact.storage.dir" value="Delta\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Enoch">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F_Enoch"/>
+		<property name="artifact.storage.dir" value="Enoch\Addons\"/>
+
+		<property name="addon.includes">
+			*\**\*.hpp
+		</property><property name="addon.excludes">
+			Data\
+			texheaders.bin
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_EPA">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F_EPA"/>
+		<property name="addon.excludes">
+			data\
+			kb\*.hpp
+			video\
+			cfgFunctions.hpp
+			cfgMissions.hpp
+			cfgPatches.hpp
+		</property>
+		<property name="addon.includes">
+			**\*.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_EPA_data">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F_EPA\data"/>
+		<property name="PACK_ALL_TEXTURES" value="true" />
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_EPA_video">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F_EPA\video"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_EPB">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F_EPB"/>
+
+		<property name="addon.excludes">
+			data\
+			kb\*.hpp
+			video\
+			cfgFunctions.hpp
+			cfgMissions.hpp
+			cfgPatches.hpp
+		</property>
+
+		<property name="addon.includes">
+			*\**\*.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_EPB_data">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F_EPB\data"/>
+		<property name="PACK_ALL_TEXTURES" value="true" />
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_EPB_video">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F_EPB\video"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_EPC">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F_EPC"/>
+
+		<property name="addon.excludes">
+			data\
+			kb\*.hpp
+			video\
+			cfgFunctions.hpp
+			cfgMissions.hpp
+			cfgPatches.hpp
+			cfgVehicles.hpp
+		</property>
+
+		<property name="addon.includes">
+			*.hpp
+			campaign\**\*.hpp
+			showcases\**\*.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_EPC_data">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F_EPC\data"/>
+		<property name="PACK_ALL_TEXTURES" value="true" />
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_EPC_video">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F_EPC\video"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="missions_f_exp">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Missions_F_Exp"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+
+		<property name="addon.excludes">
+			data\
+			kb\*.hpp
+			video\
+			cfgFunctions.hpp
+			cfgMissions.hpp
+			cfgPatches.hpp
+			cfgVehicles.hpp
+		</property>
+		<property name="addon.includes">
+			*\**\*.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Exp_A">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F_Exp_A"/>
+		<property name="addon.includes">
+			**\*.hpp
+			*\**\*.hpp
+		</property>
+		<property name="addon.excludes">
+			cfgfunctions.hpp
+			cfgmissions.hpp
+			cfgpatches.hpp
+			Data\
+		</property>
+
+		<property name="PACK_ALL_TEXTURES" value="true" />
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Exp_A_data">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F_Exp_A\data"/>
+		<property name="PACK_ALL_TEXTURES" value="true" />
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Exp_B">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F_Exp_B"/>
+		<property name="artifact.storage.dir" value="Exp_B\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Exp_B_data">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Missions_F_Exp_B\Data"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.dlc.ebo" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="missions_f_exp_data">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Missions_F_Exp\data"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+		<property name="PACK_ALL_TEXTURES" value="true" />
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Exp_MP">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F_Exp_MP"/>
+		<property name="artifact.storage.dir" value="Exp_MP\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+    <target name="Missions_F_Exp_MP_data">
+    	<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F_Exp_MP\Data"/>
+		<property name="artifact.storage.dir" value="Exp_MP\Addons\"/>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="missions_f_exp_video">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Missions_F_Exp\video"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Gamma">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F_Gamma"/>
+		<property name="addon.excludes">
+			data\
+			video\
+		</property>
+		<property name="addon.includes">
+			MPScenarios\**\*.hpp
+			Showcases\**\*.hpp
+			Challenges\description.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Gamma_data">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F_Gamma\data"/>
+		<property name="PACK_ALL_TEXTURES" value="true" />
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Gamma_video">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F_Gamma\video"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Heli">
+		<property name="addon.dlc" value="Heli"/>
+		<property name="addon.dir" value="A3\Missions_F_Heli"/>
+		<property name="artifact.storage.dir" value="Heli\Addons\"/>
+		<property name="addon.appid" value="304380"/>
+
+		<property name="addon.excludes">
+			data\
+			kb\*.hpp
+			video\
+			cfgFunctions.hpp
+			cfgMissions.hpp
+			cfgPatches.hpp
+			cfgVehicles.hpp
+		</property>
+		<property name="addon.includes">
+			*.hpp
+			**\*.hpp
+			mpscenarios\mp_groundsupport01.altis\*.hpp
+			mptypes\groundsupport\functions\hpp\*.hpp
+			showcases\showcase_slingloading.altis\*.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Heli_data">
+		<property name="addon.dlc" value="Heli"/>
+		<property name="addon.dir" value="A3\Missions_F_Heli\data"/>
+		<property name="artifact.storage.dir" value="Heli\Addons\"/>
+		<property name="addon.appid" value="304380"/>
+		<property name="PACK_ALL_TEXTURES" value="true" />
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Heli_video">
+		<property name="addon.dlc" value="Heli"/>
+		<property name="addon.dir" value="A3\Missions_F_Heli\video"/>
+		<property name="artifact.storage.dir" value="Heli\Addons\"/>
+		<property name="addon.appid" value="304380"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Kart">
+		<property name="addon.dlc" value="Kart"/>
+		<property name="addon.dir" value="A3\Missions_F_Kart"/>
+		<property name="artifact.storage.dir" value="Kart\Addons\"/>
+		<property name="addon.appid" value="288520"/>
+
+		<property name="addon.excludes">
+			Data\
+			cfgMissions.hpp
+			cfgPatches.hpp
+			cfgTimeTrials.hpp
+		</property>
+		<property name="addon.includes">
+			*\**\*.hpp
+			*.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Kart_Data">
+		<property name="addon.dlc" value="Kart"/>
+		<property name="addon.dir" value="A3\Missions_F_Kart\Data"/>
+		<property name="artifact.storage.dir" value="Kart\Addons\"/>
+		<property name="addon.appid" value="288520"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Mark">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\Missions_F_Mark"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="addon.appid" value="332350"/>
+		<property name="addon.includes">
+			*.hpp
+			**\*.hpp
+			**\*.hpp
+			*\**\*.hpp
+			*\*\*.hpp
+		</property>
+		<property name="addon.excludes">
+			data\
+			video\
+			kb\*.hpp
+			cfgfunctions.hpp
+			cfgmissions.hpp
+			cfgpatches.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Mark_data">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\Missions_F_Mark\data"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="addon.appid" value="332350"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Mark_video">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\Missions_F_Mark\video"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="addon.appid" value="332350"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_MP_Mark">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\Missions_F_MP_Mark"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="addon.appid" value="332350"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+
+		<property name="addon.excludes">
+			cfgfunctions.hpp
+			cfgmissions.hpp
+			cfgpatches.hpp
+			Data\
+		</property>
+		<property name="addon.includes">
+			*\**\*.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_MP_Mark_data">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\Missions_F_MP_Mark\Data"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_Orange">
+		<property name="addon.dlc" value="Orange"/>
+		<property name="addon.dir" value="A3\Missions_F_Orange"/>
+		<property name="artifact.storage.dir" value="Orange\Addons\"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+		<property name="addon.includes">
+			*\**\*.hpp
+			**\*.ods
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Missions_F_video">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Missions_F\video"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Modules_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Modules_f"/>
+		<property name="addon.excludes">
+			data\
+			FiringDrills\
+			; TODO: the following file is referenced in 'Modules_f\supports\fsms\requester.fsm', but the line is commented out, so it has no business being in
+			; supports\sound\invalidCoords.ogg
+		</property>
+		<property name="addon.includes">
+			**\*.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Modules_F_beta">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Modules_F_Beta"/>
+
+		<property name="addon.excludes">
+			data\
+		</property>
+		<property name="addon.includes">
+			**\*.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Modules_F_beta_data">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Modules_F_Beta\data"/>
+		<property name="PACK_ALL_TEXTURES" value="true" />
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Modules_F_Bootcamp">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Modules_F_Bootcamp"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+		<property name="addon.includes">
+			*.hpp
+		 **\*.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Modules_F_Curator">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Modules_F_Curator"/>
+		<property name="artifact.storage.dir" value="Curator\Addons\"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+	   <property name="addon.includes">
+			*.hpp
+			**\*.hpp
+			*\**\*.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Modules_F_data">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Modules_f\data"/>
+		<property name="PACK_ALL_TEXTURES" value="true" />
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Modules_F_EPB">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Modules_F_EPB"/>
+		<property name="addon.includes">
+			*.hpp
+			**\*.hpp
+			*\**\*.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Modules_F_Exp">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Modules_F_Exp"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Modules_F_Exp_A">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Modules_F_Exp_A"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Modules_F_Exp_B">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Modules_F_Exp_B"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.dlc.ebo" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Modules_F_Exp_MP">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Modules_F_Exp_MP"/>
+		<property name="artifact.storage.dir" value="Exp_MP\Addons\"/>
+
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Modules_F_Heli">
+		<property name="addon.dlc" value="Heli"/>
+		<property name="addon.dir" value="A3\Modules_F_Heli"/>
+		<property name="artifact.storage.dir" value="Heli\Addons\"/>
+		<property name="addon.appid" value="304380"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+		<property name="addon.includes">
+			*.hpp
+			**\*.hpp
+			*\**\*.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Modules_F_Kart">
+		<property name="addon.dlc" value="Kart"/>
+		<property name="addon.dir" value="A3\Modules_F_Kart"/>
+		<property name="artifact.storage.dir" value="Kart\Addons\"/>
+		<property name="addon.appid" value="288520"/>
+		<property name="PACK_ALL_TEXTURES" value="false"/>
+
+		<property name="addon.includes">
+			*.hpp
+			**\*.hpp
+			*\**\*.hpp
+		</property>
+		<property name="addon.excludes">
+			Data\
+			cfgpatches.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Modules_F_Kart_Data">
+		<property name="addon.dlc" value="Kart"/>
+		<property name="addon.dir" value="A3\Modules_F_Kart\Data"/>
+		<property name="artifact.storage.dir" value="Kart\Addons\"/>
+		<property name="addon.appid" value="288520"/>
+		<property name="PACK_ALL_TEXTURES" value="true" />
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Modules_F_Mark">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\Modules_F_Mark"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="addon.appid" value="332350"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+		<property name="addon.includes">
+			*.hpp
+			**\*.hpp
+			*\**\*.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Modules_F_MP_Mark">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\Modules_F_MP_Mark"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="addon.appid" value="332350"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+		 <property name="addon.includes">
+			*.hpp
+			**\*.hpp
+			*\**\*.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Moricky_F">
+		<property name="addon.dlc" value="Internal"/>
+		<property name="addon.dir" value="A3\Moricky_F"/>
+		<property name="PACK_ALL_TEXTURES" value="true" />
+		<property name="artifact.storage.dir" value="Moricky\Addons\"/>
+	    <property name="addon.includes">
+			*.hpp
+			**\*.hpp
+			*\**\*.hpp
+			map3d\objects\model.cfg
+		</property><property name="addon.excludes">
+			misc\ui\rsctestgroups.hpp
+			mute\cfgscriptpaths.hpp
+			mute\ui\rscdisplayoptionsaudio.hpp
+			mute\ui\rscdisplayoptionsaudio.sqf
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="MP_Armory_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\MP_Armory_F"/>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Music_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Music_f"/>
+
+		<property name="addon.excludes">
+			music\
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Music_F_Argo">
+		<property name="addon.dlc" value="Argo"/>
+		<property name="addon.dir" value="A3\Music_F_Argo"/>
+		<property name="artifact.storage.dir" value="Argo\Addons\"/>
+
+		<property name="addon.excludes">
+			music\
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+
+	<target name="Music_F_Argo_Music">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Music_F_Argo\Music"/>
+			<property name="artifact.storage.dir" value="Argo\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+
+	<target name="Music_F_Bootcamp">
+		<property name="addon.dir" value="A3\Music_F_Bootcamp"/>
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.excludes">
+			music\
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Music_F_Bootcamp_music">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Music_F_Bootcamp\Music"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Music_F_EPA">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Music_F_EPA"/>
+
+		<property name="addon.excludes">
+			music\
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Music_F_EPA_music">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Music_F_EPA\music"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Music_F_EPB">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Music_F_EPB"/>
+
+		<property name="addon.excludes">
+			music\
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Music_F_EPB_music">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Music_F_EPB\music"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Music_F_EPC">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Music_F_EPC"/>
+
+		<property name="addon.excludes">
+			music\
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Music_F_EPC_music">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Music_F_EPC\Music"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Music_F_Exp">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Music_F_Exp"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+
+		<property name="addon.excludes">
+			music\
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Music_F_Exp_music">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Music_F_Exp\music"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Music_F_Heli">
+		<property name="addon.dlc" value="Heli"/>
+		<property name="addon.dir" value="A3\Music_F_Heli"/>
+		<property name="artifact.storage.dir" value="Heli\Addons\"/>
+		<property name="addon.appid" value="304380"/>
+		<property name="addon.excludes">
+			music\
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Music_F_Heli_Music">
+		<property name="addon.dlc" value="Heli"/>
+		<property name="addon.dir" value="A3\Music_F_Heli\Music"/>
+		<property name="artifact.storage.dir" value="Heli\Addons\"/>
+		<property name="addon.appid" value="304380"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Music_F_Mark">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\Music_F_Mark"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="addon.appid" value="332350"/>
+		<property name="addon.excludes">
+			music\
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Music_F_Mark_Music">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\Music_F_Mark\Music"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="addon.appid" value="332350"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Music_F_music">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Music_f\music"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Nelson_F">
+		<property name="addon.dlc" value="Internal"/>
+		<property name="addon.dir" value="A3\Nelson_F"/>
+		<property name="PACK_ALL_TEXTURES" value="true" />
+		<property name="artifact.storage.dir" value="Nelson\Addons\"/>
+		<property name="addon.excludes">
+			functions\misc\*.sqf
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Oukej_F">
+		<property name="addon.dlc" value="Internal"/>
+		<property name="addon.dir" value="A3\Oukej_F"/>
+		<property name="artifact.storage.dir" value="Oukej\Addons\" />
+
+		<property name="PACK_ALL_TEXTURES" value="true" />
+
+		<property name="addon.includes">
+		 data\
+		</property>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Placeholders_F_Exp">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Placeholders_F_Exp"/>
+		<property name="artifact.storage.dir" value="Design\Addons\"/>
+
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Plants_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Plants_F"/>
+
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Props_F_Exp">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Props_F_Exp"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+
+	    <antcall target="main"/>
+    </target>
+
+    <target name="Props_F_Delta">
+    	<property name="addon.dlc" value="Delta"/>
+		<property name="addon.dir" value="A3\Props_F_Delta"/>
+	 	<property name="artifact.storage.dir" value="Delta\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Props_F_Exp_A">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Props_F_Exp_A"/>
+
+
+	    <antcall target="main"/>
+    </target>
+
+    <target name="Radko_F">
+    	<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Radko_F"/>
+		<property name="artifact.storage.dir" value="Radko\Addons\" />
+	    <antcall target="main"/>
+    </target>
+
+
+	<target name="RND_F">
+		<property name="addon.dlc" value="RND"/>
+		<property name="addon.dir" value="A3\RND_F"/>
+		<property name="artifact.storage.dir" value="RND\Addons\"/>
+	    <property name="PACK_ALL_TEXTURES" value="true"/>
+		<property name="addon.includes">
+		   **\*.hpp
+		</property>
+
+	    <antcall target="main"/>
+    </target>
+
+
+	<target name="Roads_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Roads_F"/>
+
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Rocks_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Rocks_F"/>
+
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Rocks_F_Argo">
+		<property name="addon.dlc" value="Argo"/>
+		<property name="addon.dir" value="A3\Rocks_F_Argo"/>
+		<property name="artifact.storage.dir" value="Argo\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+
+    <target name="Rocks_F_Delta">
+    	<property name="addon.dlc" value="Delta"/>
+		<property name="addon.dir" value="A3\Rocks_F_Delta"/>
+		<property name="artifact.storage.dir" value="Delta\Addons\"/>
+
+	    <antcall target="main"/>
+    </target>
+
+
+	<target name="Rocks_F_Exp">
+		<property name="addon.dlc" value="ExpansionPremium"/>
+		<property name="addon.dir" value="A3\Rocks_F_Exp"/>
+		<property name="artifact.storage.dir" value="ExpansionPremium\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="selfie_f">
+		<property name="addon.dlc" value="Internal"/>			
+		<property name="addon.dir" value="A3\Selfie_F"/>
+		<property name="PACK_ALL_TEXTURES" value="true" />
+		<property name="artifact.storage.dir" value="Selfie\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Sho_F">
+		<property name="addon.dlc" value="Internal"/>
+		<property name="addon.dir" value="A3\Sho_F"/>
+		<property name="artifact.storage.dir" value="RND\Addons\"/>
+		<property name="PACK_ALL_TEXTURES" value="false"/>
+		<property name="addon.includes">
+			*\**\*.hpp
+	  		*.hpp
+			**\*.ods
+	   		targets\xtest\data\model.cfg
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="signs_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Signs_F"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Soft_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Soft_F"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Soft_F_Beta">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Soft_F_Beta"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Soft_F_Bootcamp">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Soft_F_Bootcamp"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="soft_f_cl">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Soft_F_CL"/>
+		<property name="artifact.storage.dir" value="CL\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Soft_F_Delta">
+		<property name="addon.dlc" value="Delta"/>
+		<property name="addon.dir" value="A3\Soft_F_Delta"/>
+		<property name="artifact.storage.dir" value="Delta\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Soft_F_EPC">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Soft_F_EPC"/>
+	    <antcall target="main"/>
+    </target>
+
+    <target name="Soft_F_Exp">
+    	<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Soft_F_Exp"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+
+	   <antcall target="main"/>
+	</target>
+
+	<target name="Soft_F_Gamma">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Soft_F_Gamma"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Soft_F_Heli">
+		<property name="addon.dlc" value="Heli"/>
+		<property name="addon.dir" value="A3\Soft_F_Heli"/>
+		<property name="artifact.storage.dir" value="Heli\Addons\"/>
+		<property name="addon.appid" value="304380"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Soft_F_Kart">
+		<property name="addon.dlc" value="Kart"/>
+		<property name="addon.dir" value="A3\Soft_F_Kart"/>
+		<property name="artifact.storage.dir" value="Kart\Addons\"/>
+		<property name="addon.appid" value="288520"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Sounds_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Sounds_F"/>
+
+		<property name="addon.excludes">
+			air\C130\
+			air\F35F\
+			air\Plane_Fighter_01\
+			air\Plane_Transport_01\
+			vehicles\
+			arsenal\
+			environment\
+			characters\
+			sfx\
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+    <target name="Sounds_F_Arsenal">
+    	<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Sounds_F\arsenal"/>
+	    <antcall target="main"/>
+    </target>
+
+     <target name="Sounds_F_Environment">
+     	<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Sounds_F\environment"/>
+	    <antcall target="main"/>
+    </target>
+
+    <target name="Sounds_F_Characters">
+    	<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Sounds_F\characters"/>
+	    <antcall target="main"/>
+    </target>
+
+      <target name="Sounds_F_Sfx">
+      	<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Sounds_F\sfx"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Sounds_F_Bootcamp">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Sounds_F_Bootcamp"/>
+		<property name="wavetosss.d8"  value="" />
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Sounds_F_EPB">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Sounds_F_EPB"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Sounds_F_EPC">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Sounds_F_EPC"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Sounds_F_Exp">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Sounds_F_Exp"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Sounds_F_Exp_A">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Sounds_F_Exp_A"/>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Sounds_F_Exp_B">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Sounds_F_Exp_B"/>
+		<property name="artifact.storage.dir" value="Exp_B\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Sounds_F_Exp_MP">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Sounds_F_Exp_MP"/>
+		<property name="artifact.storage.dir" value="Exp_MP\Addons\"/>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Sounds_F_Heli">
+		<property name="addon.dlc" value="Heli"/>
+		<property name="addon.dir" value="A3\Sounds_F_Heli"/>
+		<property name="artifact.storage.dir" value="Heli\Addons\"/>
+		<property name="addon.appid" value="304380"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Sounds_F_Kart">
+		<property name="addon.dlc" value="Kart"/>
+		<property name="addon.dir" value="A3\Sounds_F_Kart"/>
+		<property name="artifact.storage.dir" value="Kart\Addons\"/>
+		<property name="addon.appid" value="288520"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Sounds_F_Mark">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\Sounds_F_Mark"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="addon.appid" value="332350"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Sounds_F_Mod">
+		<property name="addon.dlc" value="OfficialMod"/>
+		<property name="addon.dir" value="A3\Sounds_F_Mod"/>
+		<property name="artifact.storage.dir" value="OfficialMod\Addons\"/>
+		<antcall target="main"/>
+    </target>
+
+	<target name="Sounds_F_Vehicles">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Sounds_F\vehicles"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Static_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Static_f"/>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Static_F_Beta">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Static_F_Beta"/>
+	    <antcall target="main"/>
+    </target>
+
+    <target name="Static_F_Exp">
+    	<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Static_F_Exp"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Static_F_Gamma">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Static_F_Gamma"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Static_F_Mark">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\Static_F_Mark"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="addon.appid" value="332350"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Structures_F">
+		<property name="addon.dir" value="A3\Structures_F"/>
+		<property name="addon.dlc" value="Addons"/>
+
+		<property name="addon.excludes">
+			Data\
+			Dominants\GhostHotel\
+			Dominants\hotel_complex\
+			Dominants\LHD\
+			Dominants\Stadium\
+			Dominants\townhall\
+			Households\
+			Ind\
+			Mil\
+			Misc\
+			Wrecks\
+			Civ\Offices\Passageway_01_V1_F.p3d
+			Training\TargetP_Veh_F.p3d
+			Training\TargetArmor_F.p3d
+			Training\TargetArmor_F_Ruin.p3d
+			Training\Shoot_House_Door_F.p3d
+			Training\Shoot_House_Window_F.p3d
+			Training\Shoot_House_Leaning_F.p3d
+			Training\Target_Static_F.p3d
+			Training\Target_Spinning_F.p3d
+			Training\Target_Hanging_F.p3d
+			Training\TargetP_Inf_F.p3d
+			Training\TargetP_Inf2_F.p3d
+			Training\data\scripts\Land_Target_Hanging_F_hitPart.sqf
+			Training\data\scripts\Land_Target_Spinning_F_init.sqf
+		</property>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Structures_F_Argo">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Structures_F_Argo"/>
+		<property name="artifact.storage.dir" value="Argo\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Structures_F_Bootcamp">
+		<property name="addon.dir" value="A3\Structures_F_Bootcamp"/>
+		<property name="addon.dlc" value="Addons"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Structures_F_data">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Structures_F\Data"/>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Structures_F_Delta">
+		<property name="addon.dlc" value="Delta"/>
+		<property name="addon.dir" value="A3\Structures_F_Delta"/>
+		<property name="artifact.storage.dir" value="Delta\Addons\"/>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Structures_F_EPA">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Structures_F_EPA"/>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Structures_F_EPB">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Structures_F_EPB"/>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Structures_F_EPC">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Structures_F_EPC"/>
+
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Structures_F_Exp">
+		<property name="addon.dlc" value="ExpansionPremium"/>
+		<property name="addon.dir" value="A3\Structures_F_Exp"/>
+		<property name="artifact.storage.dir" value="ExpansionPremium\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+		<property name="addon.excludes">
+			Data\
+			data\
+	        Civilian\
+			Commercial\
+		 	Cultural\
+			Industrial\
+			Infrastructure\
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Structures_F_Exp_A">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Structures_F_Exp_A"/>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Structures_F_Exp_Civilian">
+		<property name="addon.dlc" value="ExpansionPremium"/>
+		<property name="addon.dir" value="A3\Structures_F_Exp\Civilian"/>
+		<property name="artifact.storage.dir" value="ExpansionPremium\Addons\"/>
+		<property name="addon.excludes">
+			Data\
+		</property>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+		<antcall target="main"/>
+    </target>
+
+	<target name="Structures_F_Exp_Commercial">
+		<property name="addon.dlc" value="ExpansionPremium"/>
+		<property name="addon.dir" value="A3\Structures_F_Exp\Commercial"/>
+		<property name="artifact.storage.dir" value="ExpansionPremium\Addons\"/>
+		<property name="addon.excludes">
+			Data\
+		</property>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Structures_F_Exp_data">
+		<property name="addon.dlc" value="ExpansionPremium"/>
+		<property name="addon.dir" value="A3\Structures_F_Exp\Data"/>
+		<property name="artifact.storage.dir" value="ExpansionPremium\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Structures_F_Exp_Industrial">
+		<property name="addon.dlc" value="ExpansionPremium"/>
+		<property name="addon.dir" value="A3\Structures_F_Exp\Industrial"/>
+		<property name="artifact.storage.dir" value="ExpansionPremium\Addons\"/>
+		<property name="addon.dlc.ebo" value="true"/>
+		<property name="addon.appid" value="395180"/>
+		<!--property name="addon.excludes">
+			Data\
+		</property-->
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Structures_F_Exp_Infrastructure">
+		<property name="addon.dlc" value="ExpansionPremium"/>
+		<property name="addon.dir" value="A3\Structures_F_Exp\Infrastructure"/>
+		<property name="artifact.storage.dir" value="ExpansionPremium\Addons\"/>
+	<property name="addon.dlc.ebo" value="true"/>
+		<property name="addon.appid" value="395180"/>
+	    <antcall target="main"/>
+    </target>
+
+   	<target name="Structures_F_Exp_Cultural">
+   		<property name="addon.dlc" value="ExpansionPremium"/>
+		<property name="addon.dir" value="A3\Structures_F_Exp\Cultural"/>
+		<property name="artifact.storage.dir" value="ExpansionPremium\Addons\"/>
+		<property name="addon.dlc.ebo" value="true"/>
+		<property name="addon.appid" value="395180"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Structures_F_Heli">
+		<property name="addon.dlc" value="Heli"/>
+		<property name="addon.dir" value="A3\Structures_F_Heli"/>
+		<property name="artifact.storage.dir" value="Heli\Addons\"/>
+		<property name="addon.appid" value="304380"/>
+		    <antcall target="main"/>
+    </target>
+
+	<target name="Structures_F_households">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Structures_F\Households"/>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Structures_F_ind">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Structures_F\Ind"/>
+
+		<property name="addon.excludes">
+			WavePowerPlant\WPP_ruin*
+			WavePowerPlant\WPP_Wreckage*
+		</property>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Structures_F_Kart">
+		<property name="addon.dlc" value="Kart"/>
+		<property name="addon.dir" value="A3\Structures_F_Kart"/>
+		<property name="artifact.storage.dir" value="Kart\Addons\"/>
+		<property name="addon.appid" value="288520"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Structures_F_Mark">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\Structures_F_Mark"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="addon.appid" value="332350"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Structures_F_mil">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Structures_F\Mil"/>
+
+		<property name="addon.excludes">
+			barracks\u_barracks_v1_f.p3d
+			offices\test_miloffices_furniture.p3d
+		</property>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Structures_F_misc">
+		<property name="addon.dlc" value="Addons"/>
+
+		<property name="addon.dir" value="A3\Structures_F\Misc"/>
+		<property name="artifact.storage.dir" value="Design\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Structures_F_wrecks">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Structures_F\Wrecks"/>
+
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Supplies_F_Exp">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Supplies_F_Exp"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Supplies_F_Heli">
+		<property name="addon.dlc" value="Heli"/>
+		<property name="addon.dir" value="A3\Supplies_F_Heli"/>
+		<property name="artifact.storage.dir" value="Heli\Addons\"/>
+		<property name="addon.appid" value="304380"/>
+		<property name="PACK_ALL_TEXTURES" value="false"/>
+		<property name="addon.includes">
+			bladders\data\storagebladder_dt.paa
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Supplies_F_Mark">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\Supplies_F_Mark"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="addon.appid" value="332350"/>
+
+		<antcall target="main"/>
+    </target>
+
+	<target name="Test_f" description="obsolete">
+		<property name="addon.dlc" value="Internal"/>
+		<property name="addon.dir" value="A3\Test_f"/>
+		<property name="artifact.storage.dir" value="Design\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Test_Map_AgiosEfstratios" description="obsolete">
+		<property name="addon.dlc" value="Internal"/>
+		<property name="addon.dir" value="A3\Test_Map_AgiosEfstratios"/>
+		<property name="artifact.storage.dir" value="Design\Addons\"/>
+
+		<property name="addon.excludes">
+			data\
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Test_Map_AgiosEfstratios_data" description="obsolete">
+		<property name="addon.dlc" value="Internal"/>
+		<property name="addon.dir" value="A3\Test_Map_AgiosEfstratios\data"/>
+		<property name="artifact.storage.dir" value="Design\Addons\"/>
+
+		<property name="addon.excludes">
+			layers\
+			*.seq
+		</property>
+		<property name="addon.includes">
+			roads\*.*
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Test_Map_AgiosEfstratios_data_layers" description="obsolete">
+		<property name="addon.dlc" value="Internal"/>
+		<property name="addon.dir" value="A3\Test_Map_AgiosEfstratios\data\layers"/>
+		<property name="artifact.storage.dir" value="Design\Addons\"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+	    <antcall target="build-maps"/>
+    </target>
+
+	<target name="Test_Map_Limnos" description="obsolete">
+		<property name="addon.dlc" value="Internal"/>
+		<property name="addon.dir" value="A3\Test_Map_Limnos"/>
+		<property name="artifact.storage.dir" value="Design\Addons\"/>
+
+		<property name="addon.excludes">
+			data\
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Test_Map_Limnos_data" description="obsolete">
+		<property name="addon.dlc" value="Internal"/>
+		<property name="addon.dir" value="A3\Test_Map_Limnos\data"/>
+		<property name="artifact.storage.dir" value="Design\Addons\"/>
+
+
+		<property name="addon.includes">
+			all\*.seq
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Test_Map_Limnos_data_layers" description="obsolete">
+		<property name="addon.dlc" value="Internal"/>
+		<property name="addon.dir" value="A3\Test_Map_Limnos\data\layers"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+		<property name="layers.src" value="x:\dataca\a3\Test_Map_Limnos\data\layers"/>
+		<property name="layers.dst" value="P:\A3\Test_Map_Limnos\data\layers"/>
+		<property name="layers.tile.size" value="32"/>
+		<antcall target="build-maps"/>
+    </target>
+
+	<target name="Test_Map_PhysX" description="obsolete">
+		<property name="addon.dlc" value="Internal"/>
+		<property name="addon.dir" value="A3\Test_Map_PhysX"/>
+		<property name="artifact.storage.dir" value="Design\Addons\"/>
+
+		<property name="addon.includes">
+			**\*.seq
+			data\roads\*.*
+		</property><property name="PACK_ALL_TEXTURES" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Test_Map_Testbarca" description="obsolete">
+		<property name="addon.dlc" value="Internal"/>
+		<property name="addon.dir" value="A3\Test_Map_Testbarca"/>
+		<property name="artifact.storage.dir" value="Design\Addons\"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+		<property name="addon.includes">
+			**\*.seq
+			data\roads\*.*
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="test_materials_f" description="obsolete">
+		<property name="addon.dlc" value="Internal"/>
+		<property name="addon.dir" value="A3\Test_Materials_F"/>
+		<property name="artifact.storage.dir" value="Materials\addons\"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Tilion_F">
+		<property name="addon.dlc" value="Internal"/>
+		<property name="addon.dir" value="A3\Tilion_F"/>
+		<property name="PACK_ALL_TEXTURES" value="false" />
+		<property name="artifact.storage.dir" value="Tilion\Addons\"/>
+		<property name="addon.excludes">
+			caramelldansen\missions\mission.sqm
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="UIFonts_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Uifonts_f"/>
+		<property name="addon.excludes">
+			data\
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+    <target name="UIFonts_F_data"> 
+    	<property name="addon.dlc" value="Addons"/>
+        <property name="addon.dir" value="A3\Uifonts_f\Data"/>
+        <antcall target="main"/>  
+     </target>
+
+	<target name="UI_Design_F">
+		<property name="addon.dlc" value="Design"/>
+		<property name="addon.dir" value="A3\Ui_Design_F"/>
+		<property name="artifact.storage.dir" value="Design\Addons\"/>
+		<property name="addon.excludes">
+			hpp\*.fsm
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="UI_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Ui_f"/>
+
+		<property name="addon.excludes">
+			\data\
+			scripts\gui\rscdisplayxwizardintel.sqf
+			scripts\gui\rscdisplayxwizardintelisland.sqf
+			scripts\gui\rscdisplayxwizardintelname.sqf
+			scripts\gui\rscdisplayxwizardinteltime.sqf
+			scripts\gui\rscdisplayxwizardintelweather.sqf
+			scripts\gui\rscdisplayxwizardmap.sqf
+			scripts\gui\rscdisplayxwizardmapinsertunit.sqf
+			scripts\gui\rscdisplayxwizardparameter.sqf
+			scripts\gui\rscdisplayxwizardparams.sqf
+			scripts\gui\rscdisplayxwizardtemplate.sqf
+			scripts\gui\rscdisplayxwizardunit.sqf
+			scripts\gui\rscdisplayxwizardunitselect.sqf
+			scripts\gui\rscdisplayxwizardunitselectcustom.sqf
+			hpp\common\rscdebugconsole.html
+			hpp\rscmenucomplex.fsm
+			hpp\rscmenucomplex_a2.fsm
+		</property>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="UI_F_Bootcamp">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\UI_F_Bootcamp"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="UI_F_Curator">
+		<property name="addon.dlc" value="Curator"/>
+		<property name="addon.dir" value="A3\Ui_F_Curator"/>
+		<property name="artifact.storage.dir" value="Curator\Addons\"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="UI_F_data">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Ui_f\data"/>
+		<property name="PACK_ALL_TEXTURES" value="true" />
+	    <antcall target="main"/>
+    </target>
+
+	<target name="UI_F_Exp">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\UI_F_Exp"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="UI_F_Exp_A">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\UI_F_Exp_A"/>
+
+	    <antcall target="main"/>
+    </target>
+
+    <target name="UI_F_Exp_B">
+    	<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\UI_F_Exp_B"/>
+		<property name="artifact.storage.dir" value="EXP_B\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+     <target name="UI_F_Exp_MP">
+     	<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\UI_F_Exp_MP"/>
+		<property name="artifact.storage.dir" value="Exp_MP\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="UI_F_Heli">
+		<property name="addon.dlc" value="Heli"/>
+		<property name="addon.dir" value="A3\Ui_F_Heli"/>
+		<property name="artifact.storage.dir" value="Heli\Addons\"/>
+		<property name="addon.appid" value="304380"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="UI_F_Kart">
+		<property name="addon.dlc" value="Kart"/>
+		<property name="addon.dir" value="A3\UI_F_Kart"/>
+		<property name="artifact.storage.dir" value="Kart\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="UI_F_Mark">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\UI_F_Mark"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="addon.appid" value="332350"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Ui_F_MP_Mark">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\UI_F_MP_Mark"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="addon.appid" value="332350"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="UI_F_Orange">
+		<property name="addon.dlc" value="Orange"/>
+		<property name="addon.dir" value="A3\UI_F_Orange"/>
+		<property name="artifact.storage.dir" value="Orange\Addons\"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+
+	    <antcall target="main"/>
+    </target>
+	<target name="Vegetation_F_Argo">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Vegetation_F_Argo"/>
+		<property name="artifact.storage.dir" value="Argo\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Vegetation_F_Exp">
+		<property name="addon.dlc" value="ExpansionPremium"/>
+		<property name="addon.dir" value="A3\Vegetation_F_Exp"/>
+		<property name="artifact.storage.dir" value="ExpansionPremium\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Vegetation_F_Delta">
+		<property name="addon.dlc" value="Delta"/>
+		<property name="addon.dir" value="A3\Vegetation_F_Delta"/>
+		<property name="artifact.storage.dir" value="Delta\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Warka_F">
+		<property name="addon.dlc" value="Internal"/>
+		<property name="addon.dir" value="A3\Warka_F"/>
+		<property name="artifact.storage.dir" value="Warka\addons\"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+		<property name="addon.includes">
+		   *.hpp
+		   **\*.hpp
+		   *\**\*.hpp
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Will_F">
+		<property name="addon.dlc" value="Internal"/>
+		<property name="addon.dir" value="A3\Will_F"/>
+		<property name="PACK_ALL_TEXTURES" value="true" />
+		<property name="artifact.storage.dir" value="Will\Addons\"/>
+		<property name="addon.excludes">
+			functions\misc\*.sqf
+		</property>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Weapons_F">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Weapons_F"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Weapons_F_Beta">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Weapons_F_Beta"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Weapons_F_Bootcamp">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Weapons_F_Bootcamp"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Weapons_F_Delta">
+		<property name="addon.dir" value="A3\Weapons_F_Delta"/>
+		<property name="addon.dlc" value="Delta"/>
+		<property name="artifact.storage.dir" value="Delta\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Weapons_F_EPA">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Weapons_F_EPA"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Weapons_F_EPB">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Weapons_F_EPB"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Weapons_F_EPC">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Weapons_F_EPC"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Weapons_F_Exp">
+		<property name="addon.dlc" value="Expansion"/>
+		<property name="addon.dir" value="A3\Weapons_F_Exp"/>
+		<property name="artifact.storage.dir" value="Expansion\Addons\"/>
+		<property name="addon.appid" value="395180"/>
+		<property name="addon.dlc.ebo" value="true"/>
+		<property name="anim.skip.retarget" value="true"/>
+
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Weapons_F_Gamma">
+		<property name="addon.dlc" value="Addons"/>
+		<property name="addon.dir" value="A3\Weapons_F_Gamma"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Weapons_F_Kart">
+		<property name="addon.dlc" value="Kart"/>
+		<property name="addon.dir" value="A3\Weapons_F_Kart"/>
+		<property name="artifact.storage.dir" value="Kart\Addons\"/>
+		<property name="addon.appid" value="288520"/>
+	    <antcall target="main"/>
+    </target>
+
+	<target name="Weapons_F_Mark">
+		<property name="addon.dlc" value="Mark"/>
+		<property name="addon.dir" value="A3\Weapons_F_Mark"/>
+		<property name="artifact.storage.dir" value="Mark\Addons\"/>
+		<property name="addon.appid" value="332350"/>
+	    <antcall target="main"/>
+    </target>
+
+    <target name="Weapons_F_Mod">
+    	<property name="addon.dlc" value="OfficialMod"/>
+		<property name="addon.dir" value="A3\Weapons_F_Mod"/>
+		<property name="PACK_ALL_TEXTURES" value="true"/>
+		<property name="artifact.storage.dir" value="OfficialMod\Addons\"/>
+		 <antcall target="main"/>
+    </target>
+
+	<target name="Zipper_F">
+		<property name="addon.dlc" value="Internal"/>
+		<property name="addon.dir" value="A3\Zipper_F"/>
+		<property name="artifact.storage.dir" value="Zipper\Addons\"/>
+	    <antcall target="main"/>
+    </target>
+
+<import file="projectSettingsARGO.xml"/>
+</project>
